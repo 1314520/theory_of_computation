@@ -9,7 +9,7 @@
 
 在來有兩種選擇，分別是cavalier will win nba finals和warrior will win nba finals，選cavalier will win nba finals，會進入stage4，回答right後，回到stage0，選warrior will win nba finals，進入stage5，回答but cavalier has kyrie irving.\n so you think which team will win nba finals
 
-接下來仍然是兩種選擇，仍然是cavalier will win nba finals和warrior will win nba finals，選cavalier will win nba finals，會進入stage6，回答right後，回到stage0，選warrior will win nba finals，進入stage7，回答i can't convince you'
+接下來仍然是兩種選擇，仍然是cavalier will win nba finals和warrior will win nba finals，選cavalier will win nba finals，會進入stage6，回答right後，回到stage0，選warrior will win nba finals，進入stage7，回答i can't convince you
 
 ## Author
 戴宇
