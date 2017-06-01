@@ -78,7 +78,7 @@ class TocMachine(GraphMachine):
         print('Leaving state6')
 
     def on_enter_state7(self, update):
-        update.message.reply_text("i think i can't convince you.")
+        update.message.reply_text("i think i can't convince you")
         self.go_back(update)
     
     def on_exit_state7(self, update):

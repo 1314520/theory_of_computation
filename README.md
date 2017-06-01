@@ -1,61 +1,13 @@
 # TOC Project 2017
 
-Template Code for TOC Project 2017
-
-A telegram bot based on a finite state machine
-
-## Setup
-
-### Prerequisite
-* Python 3
-
-#### Install Dependency
-```sh
-pip install -r requirements.txt
-```
-
-* pygraphviz (For visualizing Finite State Machine)
-    * [Setup pygraphviz on Ubuntu](http://www.jianshu.com/p/a3da7ecc5303)
-
-### Secret Data
-
-`API_TOKEN` and `WEBHOOK_URL` in app.py **MUST** be set to proper values.
-Otherwise, you might not be able to run your code.
-
-### Run Locally
-You can either setup https server or using `ngrok` as a proxy.
-
-**`ngrok` would be used in the following instruction**
-
-```sh
-ngrok http 5000
-```
-
-After that, `ngrok` would generate a https URL.
-
-You should set `WEBHOOK_URL` (in app.py) to `your-https-URL/hook`.
-
-#### Run the sever
-
-```sh
-python3 app.py
-```
 
 ## Finite State Machine
 ![fsm](./img/show-fsm.png)
 
-## Usage
-The initial state is set to `user`.
-
-Every time `user` state is triggered to `advance` to another state, it will `go_back` to `user` state after the bot replies corresponding message.
-
-* user
-	* Input: "go to state1"
-		* Reply: "I'm entering state1"
-
-	* Input: "go to state2"
-		* Reply: "I'm entering state2"
-
+## 用法
+一開始是stage0，可選三種輸入，分別是cavalier will win nba finals，warrior will win nba finals，i don't care who win nba finals，若選cavalier will win nba finals會進入stage1，回答right後，回到stage0，選i don't care who win nba finals會進入stage3，回答ok後，回到stage0，選warrior will win nba finals，會進入stage2，回答but cavalier has lebron james.\n so you think which team will win nba finals
+在來有兩種選擇，分別是cavalier will win nba finals和warrior will win nba finals，選cavalier will win nba finals，會進入stage4，回答right後，回到stage0，選warrior will win nba finals，進入stage5，回答but cavalier has kyrie irving.\n so you think which team will win nba finals
+接下來仍然是兩種選擇，仍然是cavalier will win nba finals和warrior will win nba finals，選cavalier will win nba finals，會進入stage6，回答right後，回到stage0，選warrior will win nba finals，進入stage7，回答i can't convince you'
 
 ## Author
-[Lee-W](https://github.com/Lee-W)
+戴宇
